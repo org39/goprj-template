@@ -66,7 +66,7 @@ $(BIN_DIR):
 .PHONY: $(BUILD_TARGETS)
 build/server: $(BIN_DIR)
 	@echo BUILD server
-	@go build -o ./bin/server ./api
+	@go build -o ./bin/server ./server
 
 ## build/cli: Build cli binary
 .PHONY: $(BUILD_TARGETS)
