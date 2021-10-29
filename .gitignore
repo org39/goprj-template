@@ -1,0 +1,8 @@
+coverage.txt
+coverage.html
+*.swp
+.tools
+mocks
+bin
+test/report
+.vscode
