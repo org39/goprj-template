@@ -22,6 +22,6 @@ RUN apk update && apk add ca-certificates && \
 RUN adduser -S -H -u 3939 u u
 USER 3939
 WORKDIR /opt
-COPY --from=builder /build/bin/* /opt
+COPY --from=builder /build/bin /opt
 
 CMD ["/opt/api"]
