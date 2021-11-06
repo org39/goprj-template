@@ -3,6 +3,7 @@ name: Unit Test
 env:
   GOVERSION: '1.17'
   DIRENV_FILE: '.envrc'
+  DOCKER_COMPOSE_FILE: 'docker-compose.yaml'
 
 on:
   pull_request:
