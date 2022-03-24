@@ -29,6 +29,7 @@ issues:
       - gomnd
 linters:
   enable:
+    - bodyclose
     - revive
     - gosec
     - unconvert
@@ -40,7 +41,6 @@ linters:
     - govet
     - gofmt
     - noctx
-    - bodyclose
     - deadcode
     - unused
     - exhaustive
@@ -49,6 +49,8 @@ linters:
     - dupl
     - staticcheck
     - sqlclosecheck
+    - godot
+    - dupl
 linters-settings:
   errcheck:
     # report about assignment of errors to blank identifier: `num, _ := strconv.Atoi(numStr)`;
