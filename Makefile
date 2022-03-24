@@ -19,7 +19,7 @@ $(TOOLS_DIR)/mockery: $(TOOLS_MOD_DIR)/go.mod $(TOOLS_MOD_DIR)/go.sum $(TOOLS_MO
 $(TOOLS_DIR)/cobra: $(TOOLS_MOD_DIR)/go.mod $(TOOLS_MOD_DIR)/go.sum $(TOOLS_MOD_DIR)/tools.go
 	@echo BUILD cobra
 	@cd $(TOOLS_MOD_DIR) && \
-	go build -o $(TOOLS_DIR)/cobra github.com/spf13/cobra/cobra
+	go build -o $(TOOLS_DIR)/cobra github.com/spf13/cobra-cli
 
 $(TOOLS_DIR)/godoc: $(TOOLS_MOD_DIR)/go.mod $(TOOLS_MOD_DIR)/go.sum $(TOOLS_MOD_DIR)/tools.go
 	@echo BUILD godoc
