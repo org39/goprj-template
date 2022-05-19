@@ -8,6 +8,8 @@
 # configure golangci-lint
 # see https://github.com/golangci/golangci-lint/blob/master/.golangci.example.yml
 issues:
+  exclude:
+    - 'declaration of "(err|ctx)" shadows declaration at'
   exclude-rules:
     - path: _test\.go
       linters:
